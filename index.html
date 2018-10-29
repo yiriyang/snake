@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贪吃蛇</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.content{
+			width:900px;
+			height:700px;
+			border:1px solid #000;
+			margin:50px auto;
+			position: relative;
+		}
+		.content>div{
+			width:10px;
+			height:10px;
+			border-radius:50%;
+			position: absolute;
+			background:green;
+		}
+		.food{
+			width:10px;
+			height:10px;
+			border-radius: 50%;
+			background: blue;
+			position: absolute;
+		}
+		h1{
+			width:10px;
+			height: 10px;
+			background: #fff;
+			display: none;
+			position: absolute;
+		}
+		h2{
+			width:400px;
+			height:300px;
+			background: #D4DBED;
+			position: absolute;
+			top:200px;
+			left:250px;
+		}
+		.startGame{
+			margin-top: 30px;
+			margin-bottom:50px;
+			text-align:center;
+		}
+		#simple,#difficulty,#abnormal{
+			width:100px;
+			height:30px;
+			text-align: center;
+			font-size:14px;
+			margin:10px auto;
+			border:2px solid #ccc;
+			line-height: 30px;
+			cursor:pointer;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div></div>
+		<div style="left:10px;"></div>
+		<div style="left:20px;"></div>
+		<div class="snakehead" style="background: red;left:20px;"></div>
+		<h1 id="ward"></h1>
+		<h2 id="face" >
+			<p class="startGame">开始游戏</p>
+			<p id="simple">简单模式</p>
+			<p id="difficulty">困难模式</p>
+			<p id="abnormal">变态模式</p>
+		</h2>
+	</div>
+	<script src="script/js.js"></script>
+</body>
+</html>
